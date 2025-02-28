@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="Home.css">
+    <link rel="icon" href="/photo/Logo.png">
+</head>
+<body>
+    <div class="nav">
+        <div class="navright">
+            <a href="../logo/logo.html"><img src="/photo/Logo.png"></a>
+        </div>
+        <div class="navleft">
+            <div>
+                <a href="../Home/HomeAdmin.html" style="text-decoration: underline;">Home</a>
+                <a href="../manicurist/manicurist.html">Manicurist</a>
+                <a href="../reservation/reservation.html">Reservation</a>
+            </div>
+            <div class="profile-container">
+                <div class="profile-icon" onclick="toggleMenu()">
+                    <i class='bx bxs-user-circle'></i>
+                </div>
+                <div class="dropdown-menu" id="dropdownMenu">
+                    <a href="../../Customer/Home/homeSignin.html" onclick="logout()"><b>Log out</b></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="banner">
+        <div class="bannerColumn">
+            <label class="inputBanner">
+                <input type="file" id="fileInput" accept="image/*">
+                <img id="previewImage" src="" alt="รูปตัวอย่างเล็บ" 
+                    style="display: none; width: 100%; border-radius: 10px;">
+                <span id="uploadText">Choose Image</span>
+                <span class="errorText" style="display: none; color: red;">The file size must not exceed 5 MB!</span>
+            </label>
+            <label class="inputBanner">
+                <input type="file" id="fileInput1" accept="image/*">
+                <img id="previewImage1" src="" alt="รูปตัวอย่างเล็บ" 
+                style="display: none; width: 100%; border-radius: 10px;">
+                <span id="uploadText1">Choose Image</span>
+                <span class="errorText" style="display: none; color: red;">The file size must not exceed 5 MB!</span>
+            </label>
+            <label class="inputBanner">
+                <input type="file" id="fileInput2" accept="image/*">
+                <img id="previewImage2" src="" alt="รูปตัวอย่างเล็บ" 
+                style="display: none; width: 100%; border-radius: 10px;">
+                <span id="uploadText2">Choose Image</span>
+                <span class="errorText" style="display: none; color: red;">The file size must not exceed 5 MB!</span>
+            </label>
+        </div>
+        <div class="bannerColumn">
+            <label class="inputBanner">
+                <input type="file" id="fileInput3" accept="image/*">
+                <img id="previewImage3" src="" alt="รูปตัวอย่างเล็บ" 
+                style="display: none; width: 100%; border-radius: 10px;">
+                <span id="uploadText3">Choose Image</span>
+                <span class="errorText" style="display: none; color: red;">The file size must not exceed 5 MB!</span>
+            </label>
+            <label class="inputBanner">
+                <input type="file" id="fileInput4" accept="image/*">
+                <img id="previewImage4" src="" alt="รูปตัวอย่างเล็บ" 
+                style="display: none; width: 100%; border-radius: 10px;">
+                <span id="uploadText4">Choose Image</span>
+                <span class="errorText" style="display: none; color: red;">The file size must not exceed 5 MB!</span>
+            </label>
+            <label class="inputBanner">
+                <input type="file" id="fileInput5" accept="image/*">
+                <img id="previewImage5" src="" alt="รูปตัวอย่างเล็บ" 
+                style="display: none; width: 100%; border-radius: 10px;">
+                <span id="uploadText5">Choose Image</span>
+                <span class="errorText" style="display: none; color: red;">The file size must not exceed 5 MB!</span>
+            </label>
+        </div>
+    </div>
+    <div class="contacts">
+        <div style="display: flex;">
+            <div class="contact_column">
+                <div class="contact_head">
+                    <p>MAGIC NAILS</p>
+                </div>
+                <div class="contact">
+                    <i class='bx bxl-facebook-square'></i>
+                    <div class="input-box">
+                        <input type="text" id="Facebook" name="Facebook" placeholder="Facebook" maxlength="50">
+                    </div>
+                </div>
+                <div class="contact">
+                    <i class='bx bxl-instagram'></i>
+                    <div class="input-box">
+                        <input type="text" id="Instagram" name="Instagram" placeholder="Instagram" maxlength="50">
+                    </div>
+                </div>
+                <div class="contact">
+                    <img class="logo" src="/photo/26.png">
+                    <div class="input-box">
+                        <input type="text" id="Line" name="Line" placeholder="Line" maxlength="50">
+                    </div>
+                </div>
+                <div class="contact">
+                    <i class='bx bx-phone-call'></i>
+                    <div class="input-box">
+                        <input type="text" id="Phonenumber" name="Phonenumber" placeholder="Phone number" maxlength="50">
+                    </div>
+                </div>
+            </div>
+            <div class="Location">
+                <div class="contact_head" style="width: 80%;">
+                    <p>Location</p>
+                </div>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3644.1119057314613!2d99.92165617505077!3d19.028393582166434!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30d8330024f09843%3A0x39e773d090de1abb!2sLa%20nail%20house%20(UP)!5e1!3m2!1sth!2sth!4v1738637500331!5m2!1sth!2sth"
+                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+                <div class="buttons" style="margin-top: 3%;">
+                    <a href="#"><button class="btn">Confirm</button> </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="Price" id="PriceSection">
+        <hr>
+        <h4 id="promotionTitle" style="font-size: 28px;">Price</h4>
+        <div class="price_menu">
+            <a href="#" id="priceLink" class="navLink activeLink" onclick="showPrice()">Price</a>
+            <a>|</a>
+            <a href="#" id="promotionLink" class="navLink" onclick="showPromotion()">Promotion</a>
+        </div>
+        <div class="content" id="promotionContent">
+            <div class="pricebox">
+                <div class="priceleft">
+                    <div class="pricedescription">
+                        <div class="head-price">
+                            <input type="text" id="Pricehead" name="Priceinput" placeholder="Head">
+                        </div>
+                        <div class="pricecolumn">
+                            <div class="service">
+                                <div class="input-price">
+                                    <input type="text" id="Priceinput" name="Priceinput" placeholder="Price">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="line"></div>
+                        <div class="pricecolumn">
+                            <div class="service">
+                                <div class="input-price">
+                                    <input type="text" id="Priceinput" name="Priceinput" placeholder="Price">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="line"></div>
+                        <div class="pricecolumn">
+                            <div class="service">
+                                <div class="input-price">
+                                    <input type="text" id="Priceinput" name="Priceinput" placeholder="Price">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="line"></div>
+                        <div class="pricecolumn">
+                            <div class="service">
+                                <div class="input-price">
+                                    <input type="text" id="Priceinput" name="Priceinput" placeholder="Price">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="line"></div>
+                        <div class="pricecolumn">
+                            <div class="service">
+                                <div class="input-price">
+                                    <input type="text" id="Priceinput" name="Priceinput" placeholder="Price">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="line"></div>
+                        <div class="pricecolumn">
+                            <div class="service">
+                                <div class="input-price">
+                                    <input type="text" id="Priceinput" name="Priceinput" placeholder="Price">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="line"></div>
+                        <div class="pricecolumn">
+                            <div class="service">
+                                <div class="input-price">
+                                    <input type="text" id="Priceinput" name="Priceinput" placeholder="Price">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="line"></div>
+                        <div class="pricecolumn">
+                            <div class="service">
+                                <div class="input-price">
+                                    <input type="text" id="Priceinput" name="Priceinput" placeholder="Price">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="line"></div>
+                        <div class="pricecolumn">
+                            <div class="service">
+                                <div class="input-price">
+                                    <input type="text" id="Priceinput" name="Priceinput" placeholder="Price">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="line"></div>
+                        <div class="pricecolumn">
+                            <div class="service">
+                                <div class="input-price">
+                                    <input type="text" id="Priceinput" name="Priceinput" placeholder="Price">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="line"></div>
+                    </div>
+                </div>
+                <div class="priceimg">
+                    <label class="pictprice">
+                        <input type="file" id="fileprice" accept="image/*">
+                        <img id="previewprice" src="" alt="รูปตัวอย่างเล็บ" 
+                        style="display: none; width: 100%; height: 100%;">
+                        <span id="uploadprice">Choose Image</span>
+                        <span class="errorText" style="display: none; color: red;">The file size must not exceed 5 MB!</span>
+                    </label>
+                    <label class="pictprice">
+                        <input type="file" id="fileprice1" accept="image/*">
+                        <img id="previewprice1" src="" alt="รูปตัวอย่างเล็บ" 
+                        style="display: none; width: 100%; height: 100%;">
+                        <span id="uploadprice1">Choose Image</span>
+                        <span class="errorText" style="display: none; color: red;">The file size must not exceed 5 MB!</span>
+                    </label>
+                </div>
+            </div>
+            <div class="line" style="background-color: #B87C55; margin-top: 1%;"></div>
+            <div class="line" style="background-color: #B87C55; margin-top: 1%;"></div>
+            <div class="pricebox">
+                <div class="priceleft">
+                    <div class="pricedescription">
+                        <div class="head-price">
+                            <input type="text" id="Pricehead" name="Priceinput" placeholder="Head">
+                        </div>
+                        <div class="pricecolumn">
+                            <div class="service">
+                                <div class="input-price">
+                                    <input type="text" id="Priceinput" name="Priceinput" placeholder="Price">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="line"></div>
+                        <div class="pricecolumn">
+                            <div class="service">
+                                <div class="input-price">
+                                    <input type="text" id="Priceinput" name="Priceinput" placeholder="Price">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="line"></div>
+                        <div class="pricecolumn">
+                            <div class="service">
+                                <div class="input-price">
+                                    <input type="text" id="Priceinput" name="Priceinput" placeholder="Price">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="line"></div>
+                    </div>
+                </div>
+                <div class="priceimg">
+                    <label class="pictprice1">
+                        <input type="file" id="fileprice2" accept="image/*">
+                        <img id="previewprice2" src="" alt="รูปตัวอย่างเล็บ" 
+                        style="display: none; width: 100%; height: 100%;">
+                        <span id="uploadprice2">Choose Image</span>
+                        <span class="errorText" style="display: none; color: red;">The file size must not exceed 5 MB!</span>
+                    </label>
+                </div>
+            </div>
+            <div class="line" style="background-color: #B87C55; margin-top: 1%;"></div>
+            <div class="line" style="background-color: #B87C55; margin-top: 1%;"></div>
+            <div class="pricebox">
+                <div class="priceleft">
+                    <div class="pricedescription">
+                        <div class="head-price">
+                            <input type="text" id="Pricehead" name="Priceinput" placeholder="Head">
+                        </div>
+                        <div class="pricecolumn">
+                            <div class="service">
+                                <div class="input-price">
+                                    <input type="text" id="Priceinput" name="Priceinput" placeholder="Price">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="line"></div>
+                        <div class="pricecolumn">
+                            <div class="service">
+                                <div class="input-price">
+                                    <input type="text" id="Priceinput" name="Priceinput" placeholder="Price">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="line"></div>
+                        <div class="pricecolumn">
+                            <div class="service">
+                                <div class="input-price">
+                                    <input type="text" id="Priceinput" name="Priceinput" placeholder="Price">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="line"></div>
+                        <div class="pricecolumn">
+                            <div class="service">
+                                <div class="input-price">
+                                    <input type="text" id="Priceinput" name="Priceinput" placeholder="Price">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="line"></div>
+                        <div class="pricecolumn">
+                            <div class="service">
+                                <div class="input-price">
+                                    <input type="text" id="Priceinput" name="Priceinput" placeholder="Price">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="line"></div>
+                        <div class="pricecolumn">
+                            <div class="service">
+                                <div class="input-price">
+                                    <input type="text" id="Priceinput" name="Priceinput" placeholder="Price">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="line"></div>
+                        <div class="pricecolumn">
+                            <div class="service">
+                                <div class="input-price">
+                                    <input type="text" id="Priceinput" name="Priceinput" placeholder="Price">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="line" style="margin-bottom: 5%;"></div>
+                    </div>
+                    <div class="pricedescription">
+                        <div class="head-price">
+                            <input type="text" id="Pricehead" name="Priceinput" placeholder="Head">
+                        </div>
+                        <div class="pricecolumn">
+                            <div class="service">
+                                <div class="input-price">
+                                    <input type="text" id="Priceinput" name="Priceinput" placeholder="Price">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="line"></div>
+                        <div class="pricecolumn">
+                            <div class="service">
+                                <div class="input-price">
+                                    <input type="text" id="Priceinput" name="Priceinput" placeholder="Price">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="line" style="margin-bottom: 5%;"></div>
+                    </div>
+                </div>
+                <div class="priceimg">
+                    <label class="pictprice2">
+                        <input type="file" id="fileprice3" accept="image/*">
+                        <img id="previewprice3" src="" alt="รูปตัวอย่างเล็บ" 
+                        style="display: none; width: 100%; height: 100%;">
+                        <span id="uploadprice3">Choose Image</span>
+                        <span class="errorText" style="display: none; color: red;">The file size must not exceed 5 MB!</span>
+                    </label>
+                </div>
+            </div>
+            <div class="line" style="background-color: #B87C55; margin-top: 1%;"></div>
+            <div class="line" style="background-color: #B87C55; margin-top: 1%;"></div>
+            <div class="pricebox">
+                <div class="priceleft">
+                    <div class="pricedescription">
+                        <div class="head-price">
+                            <input type="text" id="Pricehead" name="Priceinput" placeholder="Head">
+                        </div>
+                        <div class="pricecolumn">
+                            <div class="service">
+                                <div class="input-price">
+                                    <input type="text" id="Priceinput" name="Priceinput" placeholder="Price">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="line"></div>
+                        <div class="pricecolumn">
+                            <div class="service">
+                                <div class="input-price">
+                                    <input type="text" id="Priceinput" name="Priceinput" placeholder="Price">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="line"></div>
+                        <div class="pricecolumn">
+                            <div class="service">
+                                <div class="input-price">
+                                    <input type="text" id="Priceinput" name="Priceinput" placeholder="Price">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="line"></div>
+                        <div class="pricecolumn">
+                            <div class="service">
+                                <div class="input-price">
+                                    <input type="text" id="Priceinput" name="Priceinput" placeholder="Price">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="line"></div>
+                        <div class="pricecolumn">
+                            <div class="service">
+                                <div class="input-price">
+                                    <input type="text" id="Priceinput" name="Priceinput" placeholder="Price">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="line"></div>
+                        <div class="pricecolumn">
+                            <div class="service">
+                                <div class="input-price">
+                                    <input type="text" id="Priceinput" name="Priceinput" placeholder="Price">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="line" style="margin-bottom: 5%;"></div>
+                    </div>
+                </div>
+                <div class="priceimg">
+                    <label class="pictprice1">
+                        <input type="file" id="fileprice4" accept="image/*">
+                        <img id="previewprice4" src="" alt="รูปตัวอย่างเล็บ" 
+                        style="display: none; width: 100%; height: 100%;">
+                        <span id="uploadprice4">Choose Image</span>
+                        <span class="errorText" style="display: none; color: red;">The file size must not exceed 5 MB!</span>
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="buttons">
+            <a href="#"><button class="btn">Confirm</button> </a>
+        </div>
+    </div>
+        <footer>
+            <div class="footer">
+                <div class="column">
+                    <a>About MAGIC NAILS</a>
+                    <br>
+                    <a href="#">About us</a>
+                    <a href="#">Terms and Conditions</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+                <div class="column">
+                    <a>Customer Service</a>
+                    <br>
+                    <a href="#">Contact us</a>
+                    <a href="#">Chat & Shop Service</a>
+                    <a href="#">Frequently asked questions</a>
+                    <a href="#">Company location</a>
+                </div>
+                <div class="column">
+                    <div><img src="/photo/logo.png" alt="Logo"></div>
+                    <a>MAGIC NAILS</a>
+                    <a>Nail Salon</a>
+                </div>
+            </div>
+        </footer>
+    <script src="Home.js"></script>
+</body>
+</html>

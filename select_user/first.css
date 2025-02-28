@@ -1,0 +1,145 @@
+* {
+    background: url('/photo/LANAILS.png') no-repeat center center fixed;
+    background-size: cover;
+    font-family: s;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+    font-family: s;
+    text-align: center;
+    background: url('image.png') no-repeat center center/cover;
+}
+
+h1 {
+    font-size: 100px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.container {
+    font-size: 25px;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.container button {
+    background: rgba(8, 39, 8, 0.463);
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+    width: 100%;
+}
+#confirmBtn{
+    width: 60%;
+}
+.btn {
+    background-color: #10360e5a;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 7px;
+    margin: 0 10px;
+}
+
+.btn:hover {
+    background: #2842275a;
+    color: #ffffff;
+    border-color: #ffffff;
+}
+
+
+.button-container button:hover {
+    background: rgba(15, 16, 15, 0.247);
+}
+
+#dropdownBtn {
+    padding-right: 20px; 
+    position: relative;
+    display: inline-block;
+
+}
+.dropdown-menu {
+    list-style: none;
+    padding: 0px;
+    margin: 5px 0;
+    margin-left: 10px;
+    color: white;
+    width: 100%;
+    
+    
+}
+
+.dropdown-menu li {
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 7px;
+  }
+  .dropdown-menu li:hover {
+    background: rgba(8, 39, 8, 0.463);
+    border-radius: 7px;
+
+    
+  }
+  .hidden {
+    display: none;
+  }
+a  {
+    text-decoration: none;
+    color: white;
+    background: rgba(8, 39, 8, 0);
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 60px;
+    }
+
+    .container button {
+
+        font-size: 1em;
+    }
+
+    .btn, .register-btn {
+        width: 90%;
+        margin-bottom: 15px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 36px;
+    }
+
+    .container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .container button {
+        width: 100%;
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+
+    .btn, .register-btn {
+
+        font-size: 14px;
+        margin: 10px 0;
+    }
+}

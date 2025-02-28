@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, sans-serif;
+}
+  
+body {
+    background-image: url("/photo/22.png");
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; 
+}
+ 
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: inherit;
+    background-size: inherit;
+    background-attachment: inherit;
+    filter: blur(2px);
+    z-index: -1;
+}
+.contact-container {
+    background-color: #FFEBAE;
+    padding: 20px;
+    border-radius: 10px;
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    margin-top: 5%;
+}
+ 
+.contact-form {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 20px;
+}
+ 
+.left-column, .right-column {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+}
+ 
+label {
+    font-size: 16px;
+    margin-bottom: 5px;
+    text-align: left;
+}
+ 
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 25px;
+    outline: none;
+    box-shadow: none;
+    background-color: white;
+    appearance: none;
+}
+ 
+.button-container {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px; 
+    padding: 10px;
+}
+
+.cancle-button, .confirm-button {
+    padding: 10px 20px;
+    border: none;
+    background-color: white;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}

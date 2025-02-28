@@ -1,0 +1,94 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    height: 60%;
+    border-radius: 20px;
+    background-color: #FFEBAE;
+    margin-top: 3%;
+    padding: 50px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+.booked{
+    display: flex;
+}
+.column1 ,.column2,.column3 {
+    width: 33%;
+    height: 90%;
+    padding: 20px;
+    margin: 10px 10;
+}
+.column1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+p{
+    font-weight: 400;
+    margin-bottom: 3%;
+    font-size: 24px;
+}
+span{
+    margin-bottom: 10%;
+    font-size: 20px ;
+    color: #606060;
+
+}
+.column2 {
+    display: flex;
+    flex-direction: column; 
+} 
+.column3 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; 
+} 
+.column3  div{
+    width: 60%;
+    margin-bottom: 5%;
+}
+.column3  div  span{ 
+    color: rgb(0, 0, 0);
+}
+
+.button-container {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    height: 10%;
+    gap: 10px;
+    
+}
+
+.Edit ,.Back{
+    width: 8%;
+    border-radius: 520px;
+    font-size: 14px;
+    padding: 10px 20px;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.button:hover {
+    background-color: #f1f1f1;
+}
+
+.column2 img{
+    width: 100%;
+    height: 350px;
+    border-radius: 15px;
+}
+
+.bxs-heart {
+    color: red;
+}

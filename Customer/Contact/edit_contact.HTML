@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="edit_contact.css">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="icon" href="/photo/Logo.png">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+ 
+</head>
+<body>
+    <div class="nav">
+        <div class="navright">
+            <img src="/photo/Logo.png">
+        </div>
+        <div class="navleft">
+            <div>
+                <a href="../Home/home.html">Home</a>
+                <a href="../My_booking/My_booking.html">My Booking</a>
+                <a href="../Contact/contact.HTML" style="text-decoration: underline;">Contact</a>
+                <a href="../reservation/booking.html">Booking</a>
+            </div>
+            <div class="profile-container">
+                <div class="profile-icon" onclick="toggleMenu()">
+                    <i class='bx bxs-user-circle'></i>
+                </div>
+                <div class="dropdown-menu" id="dropdownMenu">
+                    <a href="../../Customer/Home/homeSignin.html" onclick="logout()"><b>Log out</b></a>
+                </div>
+            </div>
+        </div>
+    </div>
+ 
+   
+    <div class="contact-container">
+        <h1>Edit Contact</h1>
+        <div class="contact-form">
+            <div class="left-column">
+                <label for="Username">Username</label>
+                <input id="Username" type="text" placeholder="Username" maxlength="50" required/>
+               
+                <label for="Email">Email</label>
+                <input id="Email" type="text" placeholder="Email" maxlength="50" required/>
+               
+                <label for="Phone">Phone number</label>
+                <input id="Phone" type="text" placeholder="Phone Number" maxlength="50" required/>
+            </div>
+            <div class="right-column">
+                <label for="Facebook">Facebook</label>
+                <input id="Facebook" type="text" placeholder="Facebook" maxlength="50" required/>
+               
+                <label for="Instagram">Instagram</label>
+                <input id="Instagram" type="text" placeholder="Instagram" maxlength="50" required/>
+               
+                <label for="Line">Line</label>
+                <input id="Line" type="text" placeholder="Line" maxlength="50" required/>
+            </div>
+        </div>
+        <div class="button-container">
+            <a href="contact.HTML"><button class="confirm-button">Confirm</button></a>
+            <a href="contact.HTML"><button class="cancle-button">Cancel</a></button>
+        </div>
+    </div>
+ 
+ 
+    <footer>
+        <div class="footer">
+            <div class="column">
+                <a>About MAGIC NAILS</a>
+                <br>
+                <a href="#">About us</a>
+                <a href="#">Terms and Conditions</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Cookie Policy</a>
+            </div>
+            <div class="column">
+                <a>Customer Service</a>
+                <br>
+                <a href="#">Contact us</a>
+                <a href="#">Chat & Shop Service</a>
+                <a href="#">Frequently asked questions</a>
+                <a href="#">Company location</a>
+            </div>
+            <div class="column">
+                <div><img src="/photo/logo.png" alt="Logo"></div>
+                <a>MAGIC NAILS</a>
+                <a>Nail Salon</a>
+            </div>
+        </div>
+    </footer>
+    <script src="edit_contact.js"></script>
+</body>
+</html>
+
+ 
+ 

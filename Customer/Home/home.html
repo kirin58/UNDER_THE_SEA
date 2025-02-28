@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="icon" href="/photo/Logo.png">
+    <link rel="stylesheet" href="homeSignin.css">
+</head>
+
+<body>
+    <div class="nav">
+        <div class="navright">
+            <img src="/photo/Logo.png">
+        </div>
+        <div class="navleft">
+            <div>
+                <a href="../Home/home.html" style="text-decoration: underline;">Home</a>
+                <a href="../My_booking/My_booking.html">My Booking</a>
+                <a href="../Contact/contact.HTML">Contact</a>
+                <a href="../reservation/booking.html">Booking</a>
+            </div>
+            <div class="profile-container">
+                <div class="profile-icon" onclick="toggleMenu()">
+                    <i class='bx bxs-user-circle'></i>
+                </div>
+                <div class="dropdown-menu" id="dropdownMenu">
+                    <a href="homeSignin.html" onclick="logout()"><b>Log out</b></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="Card_slideshow-container">
+        <a href="#">
+            <div class="slides fade">
+                <img src="/photo/14.png" alt="Image 1">
+            </div>
+        </a>
+        <a href="#">
+            <div class="slides fade">
+                <img src="/photo/15.png" alt="Image 2">
+            </div>
+        </a>
+        <a href="#">
+            <div class="slides fade">
+                <img src="/photo/16.png" alt="Image 3">
+            </div>
+        </a>
+        <a href="#">
+            <div class="slides fade">
+                <img src="/photo/17.png" alt="Image 4">
+            </div>
+        </a>
+        <a href="#">
+            <div class="slides fade">
+                <img src="/photo/18.png" alt="Image 5">
+            </div>
+        </a>
+        <div class="dots-container">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+    </div>
+    <div class="contacts">
+        <div style="display: flex;">
+            <div class="contact_column">
+                <div class="contact_head">
+                    <p>MAGIC NAILS</p>
+                </div>
+                <div class="contact">
+                    <i class='bx bxl-facebook-square'></i>
+                    <p class="social">MAGIC NAILS</p>
+                </div>
+                <div class="contact">
+                    <i class='bx bxl-instagram'></i>
+                    <p class="social">MAGIC_NAILS</p>
+                </div>
+                <div class="contact">
+                    <img src="/photo/26.png">
+                    <p class="social">@MAGIC_NAILS</p>
+                </div>
+                <div class="contact">
+                    <i class='bx bx-phone-call'></i>
+                    <p class="social">097-XXX-XXXX</p>
+                </div>
+            </div>
+            <div class="Location">
+                <div class="contact_head">
+                    <p>Location</p>
+                </div>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3644.1119057314613!2d99.92165617505077!3d19.028393582166434!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30d8330024f09843%3A0x39e773d090de1abb!2sLa%20nail%20house%20(UP)!5e1!3m2!1sth!2sth!4v1738637500331!5m2!1sth!2sth"
+                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </div>
+    <div class="Price" id="PriceSection">
+        <hr>
+        <h4 id="promotionTitle" style="font-size: 28px;">Price</h4>
+        <div class="price_menu">
+            <a href="#" id="priceLink" class="navLink activeLink" onclick="showPrice()">Price</a>
+            <a>|</a>
+            <a href="#" id="promotionLink" class="navLink" onclick="showPromotion()">Promotion</a>
+        </div>
+        <div class="content" id="promotionContent">
+            <div class="pricebox">
+                <div class="priceleft">
+                    <div class="pricedescription">
+                        <h4>NAIL CARE</h4>
+                        <div class="pricecolumn">
+                            <div class="service">
+                                <p>ตัดหนังมือ + ทาสี (Manicure + Nail Polish)</p>
+                            </div>
+                            <div class="price">
+                                <p>฿450</p>
+                            </div>
+                        </div>
+                        <div class="line"></div>
+                        <div class="pricecolumn">
+                            <div class="service">
+                                <p>ตัดหนังเท้า + ทาสี (Pedicure + Nail Polish)</p>
+                            </div>
+                            <div class="price">
+                                <p>฿450</p>
+                            </div>
+                        </div>
+                        <div class="line"></div>
+                        <div class="pricecolumn">
+                            <div class="service">
+                                <p>ตัดหนังมือและเท้า + ทาสี (Manicure and Pedicure + Nail Polish)</p>
+                            </div>
+                            <div class="price">
+                                <p>฿750</p>
+                            </div>
+                        </div>
+                        <div class="line"></div>
+                        <div class="pricecolumn">
+                            <div class="service">
+                                <p>สปามือ + ทาสี (Hand Spa + Nail Polish)</p>
+                            </div>
+                            <div class="price">
+                                <p>฿500</p>
+                            </div>
+                        </div>
+                        <div class="line"></div>
+                        <div class="pricecolumn">
+                            <div class="service">
+                                <p>สปามือ + ทาสี (Hand Spa + Nail Polish)</p>
+                            </div>
+                            <div class="price">
+                                <p>฿650</p>
+                            </div>
+                        </div>
+                        <div class="line"></div>
+                        <div class="pricecolumn">
+                            <div class="service">
+                                <p>สปาชุด มือเท้า + ทาสี (Hand and Foot Spa + Nail Polish)</p>
+                            </div>
+                            <div class="price">
+                                <p>฿1000</p>
+                            </div>
+                        </div>
+                        <div class="line"></div>
+                        <div class="pricecolumn">
+                            <div class="service">
+                                <p>พาราฟินมือ (Hand Paraffin)</p>
+                            </div>
+                            <div class="price">
+                                <p>฿500</p>
+                            </div>
+                        </div>
+                        <div class="line"></div>
+                        <div class="pricecolumn">
+                            <div class="service">
+                                <p>พาราฟินเท้า (Foot Paraffin)</p>
+                            </div>
+                            <div class="price">
+                                <p>฿500</p>
+                            </div>
+                        </div>
+                        <div class="line"></div>
+                        <div class="pricecolumn">
+                            <div class="service">
+                                <p>พาราฟิน มือเท้า (Hand and Foot Paraffin)</p>
+                            </div>
+                            <div class="price">
+                                <p>฿900</p>
+                            </div>
+                        </div>
+                        <div class="line"></div>
+                        <div class="pricecolumn">
+                            <div class="service">
+                                <p>สปาเท้า Footlogix Pro-Pedicure + ทาสี(Nail Polish)</p>
+                            </div>
+                            <div class="price">
+                                <p>฿700</p>
+                            </div>
+                        </div>
+                        <div class="line"></div>
+                    </div>
+                </div>
+                <div class="priceimg">
+                    <img src="/photo/35.jpg">
+                    <img src="/photo/36.jpg">
+                </div>
+            </div>
+            <div class="line" style="background-color: #B87C55; margin-top: 1%;"></div>
+            <div class="line" style="background-color: #B87C55; margin-top: 1%;"></div>
+            <div class="pricebox">
+                <div class="priceleft">
+                    <div class="pricedescription">
+                        <h4>NAIL EXTENSION</h4>
+                        <div class="pricecolumn">
+                            <div class="service">
+                                <p>ต่อเล็บอะคริลิค (Acrylic Extension)</p>
+                            </div>
+                            <div class="price">
+                                <p>฿1500</p>
+                            </div>
+                        </div>
+                        <div class="line"></div>
+                        <div class="pricecolumn">
+                            <div class="service">
+                                <p>เติมโคนอะคริลิค (Acrylic Fill-in)</p>
+                            </div>
+                            <div class="price">
+                                <p>฿800</p>
+                            </div>
+                        </div>
+                        <div class="line"></div>
+                        <div class="pricecolumn">
+                            <div class="service">
+                                <p>ถอดเล็บอะคริลิค (Remove Acrylic)</p>
+                            </div>
+                            <div class="price">
+                                <p>฿500</p>
+                            </div>
+                        </div>
+                        <div class="line"></div>
+                    </div>
+                </div>
+                <div class="priceimg">
+                    <img src="/photo/37.jpg">
+                </div>
+            </div>
+            <div class="line" style="background-color: #B87C55; margin-top: 1%;"></div>
+            <div class="line" style="background-color: #B87C55; margin-top: 1%;"></div>
+            <div class="pricebox">
+                <div class="priceleft">
+                    <div class="pricedescription">
+                        <h4>NAIL DESIGN</h4>
+                        <div class="pricecolumn">
+                            <div class="service">
+                                <p>ทาสีเจลมือ / เท้า (Gel Nail Polish)</p>
+                            </div>
+                            <div class="price">
+                                <p>฿500</p>
+                            </div>
+                        </div>
+                        <div class="line"></div>
+                        <div class="pricecolumn">
+                            <div class="service">
+                                <p>ทาสีเจลมือและเท้า (Gel Nail Polish Hand and Foot)</p>
+                            </div>
+                            <div class="price">
+                                <p>฿900</p>
+                            </div>
+                        </div>
+                        <div class="line"></div>
+                        <div class="pricecolumn">
+                            <div class="service">
+                                <p>ถอดสีเจล (Gel Nail Remove)</p>
+                            </div>
+                            <div class="price">
+                                <p>฿100</p>
+                            </div>
+                        </div>
+                        <div class="line"></div>
+                        <div class="pricecolumn">
+                            <div class="service">
+                                <p>ทาสี (Nail Polish)</p>
+                            </div>
+                            <div class="price">
+                                <p>฿200</p>
+                            </div>
+                        </div>
+                        <div class="line"></div>
+                        <div class="pricecolumn">
+                            <div class="service">
+                                <p>ทาสีแบบเฟรนซ์ (French Nail)</p>
+                            </div>
+                            <div class="price">
+                                <p>฿200</p>
+                            </div>
+                        </div>
+                        <div class="line"></div>
+                        <div class="pricecolumn">
+                            <div class="service">
+                                <p>ไล่สี (Shading)</p>
+                            </div>
+                            <div class="price">
+                                <p>฿200</p>
+                            </div>
+                        </div>
+                        <div class="line"></div>
+                        <div class="pricecolumn">
+                            <div class="service">
+                                <p>เพนท์ลาย เริ่มต้นนิ้วละ (Nail Art Start From)</p>
+                            </div>
+                            <div class="price">
+                                <p>฿50</p>
+                            </div>
+                        </div>
+                        <div class="line" style="margin-bottom: 5%;"></div>
+                    </div>
+                    <div class="pricedescription">
+                        <h4>NAIL SET</h4>
+                        <div class="pricecolumn">
+                            <div class="service">
+                                <p>ตัดหนังมือ + ทาสีเจลมือ (Manicure + Gel Nail Polish)</p>
+                            </div>
+                            <div class="price">
+                                <p>฿850</p>
+                            </div>
+                        </div>
+                        <div class="line"></div>
+                        <div class="pricecolumn">
+                            <div class="service">
+                                <p>ตัดหนังเท้า + ทาสีเจลเท้า (Pedicure + Gel Nail Polish)</p>
+                            </div>
+                            <div class="price">
+                                <p>฿850</p>
+                            </div>
+                        </div>
+                        <div class="line" style="margin-bottom: 5%;"></div>
+                    </div>
+                </div>
+                <div class="priceimg" style="margin-top: 15%;">
+                    <img src="/photo/38.jpg" >
+                </div>
+            </div>
+            <div class="line" style="background-color: #B87C55; margin-top: 1%;"></div>
+            <div class="line" style="background-color: #B87C55; margin-top: 1%;"></div>
+            <div class="pricebox">
+                <div class="priceleft">
+                    <div class="pricedescription">
+                        <h4>KID</h4>
+                        <div class="pricecolumn">
+                            <div class="service">
+                                <p>ตัดหนังมือ + ทาสี (Manicure + Nail Polish)</p>
+                            </div>
+                            <div class="price">
+                                <p>฿350</p>
+                            </div>
+                        </div>
+                        <div class="line"></div>
+                        <div class="pricecolumn">
+                            <div class="service">
+                                <p>ตัดหนังเท้า + ทาสี (Pedicure + Nail Polish)</p>
+                            </div>
+                            <div class="price">
+                                <p>฿350</p>
+                            </div>
+                        </div>
+                        <div class="line"></div>
+                        <div class="pricecolumn">
+                            <div class="service">
+                                <p>ตัดหนังมือและเท้า + ทาสี (Manicure and Pedicure + Nail Polish)</p>
+                            </div>
+                            <div class="price">
+                                <p>฿550</p>
+                            </div>
+                        </div>
+                        <div class="line"></div>
+                        <div class="pricecolumn">
+                            <div class="service">
+                                <p>ทาสีธรรมดา (Nail Polish)</p>
+                            </div>
+                            <div class="price">
+                                <p>฿150</p>
+                            </div>
+                        </div>
+                        <div class="line"></div>
+                        <div class="pricecolumn">
+                            <div class="service">
+                                <p>ทาสีเจล มือ/เท้า (Gel Nail Polish)</p>
+                            </div>
+                            <div class="price">
+                                <p>฿400</p>
+                            </div>
+                        </div>
+                        <div class="line"></div>
+                        <div class="pricecolumn">
+                            <div class="service">
+                                <p>ทาสีเจลมือและเท้า (Gel Nail Polish hand and foot)</p>
+                            </div>
+                            <div class="price">
+                                <p>฿700</p>
+                            </div>
+                        </div>
+                        <div class="line" style="margin-bottom: 5%;"></div>
+                    </div>
+                </div>
+                <div class="priceimg">
+                    <img src="/photo/39.jpg">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+        <footer>
+            <div class="footer">
+                <div class="column">
+                    <a>About MAGIC NAILS</a>
+                    <br>
+                    <a href="#">About us</a>
+                    <a href="#">Terms and Conditions</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+                <div class="column">
+                    <a>Customer Service</a>
+                    <br>
+                    <a href="#">Contact us</a>
+                    <a href="#">Chat & Shop Service</a>
+                    <a href="#">Frequently asked questions</a>
+                    <a href="#">Company location</a>
+                </div>
+                <div class="column">
+                    <div><img src="/photo/logo.png" alt="Logo"></div>
+                    <a>MAGIC NAILS</a>
+                    <a>Nail Salon</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="home.js"></script>
+</body>
+
+</html>

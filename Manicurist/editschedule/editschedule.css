@@ -1,0 +1,107 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: url(/photo/40.png);
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.Schedule {
+    height: auto;
+    background-color: #FFEBAE;
+    width: 80%;
+    margin: 2%;
+    padding: 1%;
+    font-size: 32px;
+    border-radius: 20px;
+}
+h3{
+    color: #4F4949;
+    font-size: 24px;
+    text-align: center; 
+    width: 90%;
+}
+
+
+.time p{
+    color: black;
+    width: 50%;
+    margin-left: 3%;
+}
+
+.time{   
+    display: flex;
+    justify-content: space-between;
+    margin: 1% 0% 1% 2%;
+    background-color: #F6D6EE;
+    width: 70%;
+    height: 50px;
+    border-radius: 10px;
+}
+
+.AVAILABLE{
+    width: 50%;
+    color: red;
+    justify-content: flex-start;
+}
+.CLOSED {
+    width: 50%;
+    color: red;
+    justify-content: flex-start;
+}
+.Customer {
+    justify-content: flex-start;
+    width: 50%;
+}
+
+h1{
+    width: 80%;
+    margin-top: 3%;
+    font-weight: 500;
+    color: #4F4949;
+}
+section{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.button{
+    width: 25%;
+    margin: 1% 1% 1% 1%;
+    display: flex;
+    justify-content: flex-end;
+}
+button{
+    width: 80%;
+    border-radius: 20px;
+    height:100%;
+    border: none;
+    color: #ffff;
+    font-size: 18px;
+}
+.close-btn{
+    background-color: #FF7070;
+}
+.open-btn{
+    background-color: #0ac61da9;
+}
+.finish-btn{
+    background-color: #ffff;
+    color: black;
+}
+.head_schedule{
+    width: 100%;
+    display: flex;
+    margin-bottom: 1%;
+}
+.head_schedule a{
+    margin-left: 3%;
+    font-size: 36px;
+}
+
+

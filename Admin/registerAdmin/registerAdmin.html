@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registert</title>
+    <link rel="stylesheet" href="registerAdmin.css">
+    <link rel="icon" href="/photo/Logo.png">
+</head>
+<body>
+    <h1 style="font-family: s;">REGISTER</h1>
+    <div class="content">
+        <div class="column">
+            <label for="Username">Enter your Username</label>
+                <input id ="Username"
+                    type="text"
+                    outfocus="outfocus"
+                    placeholder="Username"required/>
+                    <div id="usernameError"></div>
+            <label for="Email">Enter your Email</label>
+                <input id ="Email"
+                    type="text"
+                    outfocus="outfocus"
+                    placeholder="Email"required/>
+                    <div id="emailError"></div>
+                    
+                </div>
+                <div class="column" >
+                    <label for="Password">Enter your Password</label>
+                    <input id ="Password"
+                        type="text"
+                        outfocus="outfocus"
+                        placeholder="Password"required
+                        minlength="8"/>
+                        <div id="passwordError"></div>
+                    <label for="ConfirmPassword">Confirm Password</label>
+                    <input id="ConfirmPassword" 
+                    type="text" 
+                    placeholder="Password" 
+                    required 
+                    minlength="8"/>
+                        <div id="confirmPasswordError"></div>
+                        
+              
+        </div>
+    </div>
+    <div class="button">
+        <div class="columnconfirm">
+            <div class="inconfirm">
+                <button type="button" class="confirm" onclick="registerUser()">Confirm</button>
+            </div>
+        </div>
+        <div class="column">
+            <button class="cancel"><a href="/Admin/loginadmin/loginadmin.html">Cancel</a></button>
+        </div>  
+    </div>
+    <script src="registerAdmin.js"></script>
+</body>
+</html>

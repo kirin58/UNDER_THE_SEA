@@ -1,0 +1,211 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, sans-serif;
+}
+  
+body {
+    background-image: url("/photo/22.png");
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; 
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: inherit;
+    background-size: inherit;
+    background-attachment: inherit;
+    filter: blur(2px);
+    z-index: -1;
+}
+
+.title{
+    color: #4F4949;
+    width: 90%;
+    font-size: 45px;
+    font-family: s;
+    margin-top: 3%;
+    margin-bottom: 1%;
+
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3%;
+    width: 90%;
+    height: auto;
+    border-radius: 20px;
+    background-color: #FFEBAE;
+}
+.first{
+    width: 100%;
+    height: 20%;
+    margin-top: 1%;
+    display: flex;
+    justify-content: space-around;
+}
+.first p{
+    margin-bottom: 2%;
+}
+.first_1{
+    width: 21%;
+    height: auto;
+}
+.first_2{
+    width: 16%;
+    height: auto;
+}
+
+.first_3{
+    width: 36%;
+    height: auto;
+}
+.first input {
+    width: 100%;
+    padding: 5px;
+    font-size: 14px; 
+    border-radius: 11px;
+    background-color: rgb(253, 253, 253);
+    border: none;
+}
+.first input:focus {
+    outline: none;
+    border-color: white;
+}
+.first input::placeholder{
+    color: #cdcdcd;
+ 
+}
+select{
+    width: 100%;
+    padding: 5px;
+    font-size: 14px; 
+    border-radius: 11px;
+    background-color: rgb(253, 253, 253);
+    border: none;
+}
+select :focus {
+    outline: none;
+    border-color: white;
+}
+select input ::placeholder {
+    color: #cdcdcd;
+}
+.second{
+    margin-top: 1%;
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 2%;
+}
+.second div{
+    width: 25%;
+    height: auto;
+    background-color: #ffffff;
+    border-radius: 20px;
+    
+}
+.second p{
+    margin:5% 15% 10% 15%;
+    text-align: center;
+    width: 70%;
+    border-radius:20px;
+    padding: 1%;
+    background-color: #d9d9d97a;
+}
+.checkbox{
+    padding: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5%;
+}
+.checkbox input[type="checkbox"] {
+    display: none;
+}
+
+.checkbox label {
+    width: 50%;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    font-size: 16px;
+    padding-left: 35px;
+}
+
+.checkbox label::before {
+    content: '\2661';
+    font-size: 24px;
+    color: grey;
+    position: absolute;
+    left: 0;
+    top: 0;
+    line-height: 20px;
+    transition: color 0.3s ease;
+}
+
+.checkbox input[type="checkbox"]:checked + label::before {
+    content: '\2665';
+    color: red;
+}
+.second_2 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.ref{
+    width: 70%;
+    height: 50%;
+    background: #F6D6EE;
+    border-radius: 20px;
+    cursor: pointer;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+}
+.ref img{
+    width: 500px;
+    height: 100%;
+}
+.ref input[type="file"] {
+    display: none;
+}
+#error-message {
+    color: red; 
+    display: none; 
+    width:50%;
+    text-align: left;
+}
+.third{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1%;
+    width: 90%;
+    height: 10%;
+}
+.buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-bottom: 3%;
+    width:100%;
+}

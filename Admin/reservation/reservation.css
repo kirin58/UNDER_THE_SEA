@@ -1,0 +1,177 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(6.png);
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: inherit;
+    background-size: inherit;
+    background-attachment: inherit;
+    filter: blur(2px);
+    z-index: -1;
+}
+main{
+    margin-top: 3%;
+    width: 90%;
+}
+main h1{
+    font-weight: 500;
+}
+section{
+    width: 100%;
+    background-color: #FFEBAE;
+    border-radius: 20px;
+    margin-top: 2%;
+    display: flex;
+}
+section h2{
+    font-weight: 500;
+}
+.left{
+    padding: 20px;
+    width: 80%;
+}
+.right{
+    width: 20%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.columnmange{
+    display: flex;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.input{
+    width: 33%;
+    position: relative;
+    font-size: 20px;
+    margin-top: 1%;
+}
+
+.input input {
+    width: 80%;
+    height: 40px;
+    margin-top: 3%;
+    background-color: #ffffff;
+    border: 1px solid #BFBFBF;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 14px;
+    outline: none;
+    color: #000000;
+}
+.input-manicurist{
+    width: 33%;
+    position: relative;
+    font-size: 20px;
+    margin-top: 1%;
+}
+
+.input-manicurist input {
+    width: 80%;
+    height: 40px;
+    margin-top: 3%;
+    background-color: #ffffff;
+    border: 1px solid #BFBFBF;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 14px;
+    outline: none;
+    color: #000000;
+}
+.time{
+    width: 50%;
+    position: relative;
+    font-size: 20px;
+}
+
+.time input {
+    width: 80%;
+    height: 40px;
+    margin-top: 3%;
+    background-color: #ffffff;
+    border: 1px solid #BFBFBF;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 14px;
+    outline: none;
+    color: #000000;
+}
+.buttons{
+    margin-top: 2%;
+    width: 100%;
+}
+.plus{
+    border-radius: 50%;
+    background-color: white;
+    padding: 2px;
+    border: none;
+    box-shadow:   1px 3px 2px 1px #88888876;
+}
+.plusmanicurist i{
+    font-size: 44px;
+}
+.plusmanicurist{
+    border-radius: 50%;
+    background-color: white;
+    padding: 2px;
+    border: none;
+    box-shadow:   1px 3px 2px 1px #88888876;
+}
+.plus i{
+    font-size: 44px;
+}
+.delete{
+    border-radius: 50%;
+    background-color: rgb(255, 0, 0);
+    padding: 2px;
+    border: none;
+    box-shadow:   1px 3px 2px 1px #88888876;
+}
+.delete i{
+    rotate: 45deg;
+    font-size: 44px;
+}
+.buttoncolumn{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.delete-btn {
+    border-radius: 50%;
+    background-color: red;
+    padding: 2px;
+    border: none;
+    box-shadow:   1px 3px 2px 1px #88888876;
+    cursor: pointer;
+}
+.delete-btn i{
+    rotate: 45deg;
+    font-size: 16px;
+}
+.buttons {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 2%;
+    justify-content: flex-end;
+    margin-top: 3%;
+    width: 93%;
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manicurist</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="manicurist.css">
+    <link rel="icon" href="/photo/Logo.png">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="nav">
+        <div class="navright">
+            <a href="../logo/logo.html"><img src="/photo/Logo.png"></a>
+        </div>
+        <div class="navleft">
+            <div>
+                <a href="../Home/HomeAdmin.html">Home</a>
+                <a href="../manicurist/manicurist.html" style="text-decoration: underline;">Manicurist</a>
+                <a href="../reservation/reservation.html">Reservation</a>
+            </div>
+            <div class="profile-container">
+                <div class="profile-icon" onclick="toggleMenu()">
+                    <i class='bx bxs-user-circle'></i>
+                </div>
+                <div class="dropdown-menu" id="dropdownMenu">
+                    <a href="/select_user/first.html" onclick="logout()"><b>Log out</b></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <main>
+        <section>
+            <h1>Manicurist Name</h1>
+            <div class="manicuristcolumn">
+                <label class="input">
+                    <p>Username</p>
+                    <input type="text" id="username" required />
+                    <div id="usernameError" class="error"></div>
+                </label>
+                <label class="input">
+                    <p>Password</p>
+                    <input id="Password" type="password" required />
+                    <div id="passwordError" class="error"></div>
+                </label>
+            </div>
+            <div class="buttons">
+                <button class="Add" style="background-color: #A088DE;" onclick="addManicurist()">Add manicurist</button>
+                <div style="width: 50%; display: flex; justify-content: flex-end;">
+                    <button class="Comfirm" style="background-color: #80F2A6; margin-right: 2%;" onclick="confirmRegistration()">Comfirm</button>
+                    <button class="delete" style="background-color: #EC4548;">Delete</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="column">
+                <a>About MAGIC NAILS</a>
+                <br>
+                <a href="#">About us</a>
+                <a href="#">Terms and Conditions</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Cookie Policy</a>
+            </div>
+            <div class="column">
+                <a>Customer Service</a>
+                <br>
+                <a href="#">Contact us</a>
+                <a href="#">Chat & Shop Service</a>
+                <a href="#">Frequently asked questions</a>
+                <a href="#">Company location</a>
+            </div>
+            <div class="column">
+                <div><img src="/photo/logo.png" alt="Logo"></div>
+                <a>MAGIC NAILS</a>
+                <a>Nail Salon</a>
+            </div>
+        </div>
+    </footer>
+    <script src="addmanicurist.js"></script>
+    
+</body>
+</html>

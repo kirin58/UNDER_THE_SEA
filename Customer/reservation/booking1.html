@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking</title>
+    <link rel="stylesheet" href="booking.css">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="icon" href="/photo/Logo.png">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body>
+    <div class="nav">
+        <div class="navright">
+            <img src="/photo/Logo.png">
+        </div>
+        <div class="navleft">
+            <div>
+                <a href="../Home/home.html">Home</a>
+                <a href="../My_booking/My_booking.html">My Booking</a>
+                <a href="../Contact/contact.HTML">Contact</a>
+                <a href="../reservation/booking.html" style="text-decoration: underline;">Booking</a>
+            </div>
+            <div class="profile-container">
+                <div class="profile-icon" onclick="toggleMenu()">
+                    <i class='bx bxs-user-circle'></i>
+                </div>
+                <div class="dropdown-menu" id="dropdownMenu">
+                    <a href="../../Customer/Home/homeSignin.html" onclick="logout()"><b>Log out</b></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="title"><p>Reservation</p></div>
+    <div class="content">
+        <div class="first">
+            <div class="first_1">
+                <p>Date</p>
+                <input id ="Date"
+                    type="Date"
+                    outfocus="focus"
+                    required/>
+            </div>
+            <div class="first_2">
+                <p>Time</p>
+                <input id ="Time"
+                    type="time" min="15:00" max="22:00"
+                    outfocus="focus"
+                    required/>
+            </div>
+            <div class="first_3">
+                <p>Manicurist</p>
+                <select id="manicurist" name="manicurist">
+                    <option value="MUMU">MUMU</option>
+                    <option value="BUI">BUI</option>
+                    <option value="CREAM">CREAM</option>
+                </select>
+            </div>
+        </div>
+        <div class="second">   
+            <div class="second_1">
+                <p>Service</p>
+                <div class="checkbox" style="width: 100%">
+                    <input type="checkbox" id="nail1" name="nail1">
+                    <label for="nail1">ทาสีเล็บ</label> <br>
+                    <input type="checkbox" id="nail2" name="nail2">
+                    <label for="nail2">ต่อเล็บ</label> <br>
+                    <input type="checkbox" id="nail3" name="nail3">
+                    <label for="nail3">เพ้นท์เล็บ</label> <br>
+                    <input type="checkbox" id="nail4" name="nail4">
+                    <label for="nail4">ต่อเล็บ PVC</label> <br>
+                    <input type="checkbox" id="nail5" name="nail5">
+                    <label for="nail5">ปั้นนูน</label> <br>
+                    <input type="checkbox" id="nail6" name="nail6">
+                    <label for="nail6">สปาเล็บ</label> <br>
+                    <input type="checkbox" id="nail7" name="nail7">
+                    <label for="nail7">ล้างเล็บ</label> <br>
+
+                </div>
+            </div>
+            <div class="second_2">
+                <p >Reference</p>
+                <label class="ref">
+                    <input type="file" id="fileInput" accept="image/*">
+                    <img id="previewImage" src="" alt="รูปตัวอย่างเล็บ" 
+                    style="display: none; width: 100%; border-radius: 10px;">
+                    <span id="uploadText">รูปตัวอย่างเล็บ</span>
+                </label>
+            </div>
+            <div class="second_1">
+                <p>Colors</p>
+                <div class="checkbox" style="width: 100%;">
+                    <input type="checkbox" id="color1" name="color1">
+                    <label for="color1">สีเจล</label> <br>
+                    <input type="checkbox" id="color2" name="color2">
+                    <label for="color2">สีธรรมดา</label> <br>
+                    <input type="checkbox" id="color3" name="color3">
+                    <label for="color3">สีแฟลช</label> <br>
+                    <input type="checkbox" id="color4" name="color4">
+                    <label for="color4">สีเจลแฟลช</label> <br>
+                    <input type="checkbox" id="color5" name="color5">
+                    <label for="color5">สีลูกแก้ว</label> <br>
+                    <input type="checkbox" id="color6" name="color6">
+                    <label for="color6">สีเจลลูกแก้ว</label> <br>
+                    <input type="checkbox" id="color7" name="color7">
+                    <label for="color7">ไล่สี</label> <br>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="third">
+            <p id="error-message"></p>
+            <div class="buttons">
+                <a href="/Customer/My_booking/My_booking.html" ><button class="btn" id="confirmBtn">Confirm</button> </a>
+                <a href="/Customer/My_booking/My_booking.html" ><button class="btn">Cancel</button></a>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer">
+            <div class="column">
+                <a>About MAGIC NAILS</a>
+                <br>
+                <a href="#">About us</a>
+                <a href="#">Terms and Conditions</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Cookie Policy</a>
+            </div>
+            <div class="column">
+                <a>Customer Service</a>
+                <br>
+                <a href="#">Contact us</a>
+                <a href="#">Chat & Shop Service</a>
+                <a href="#">Frequently asked questions</a>
+                <a href="#">Company location</a>
+            </div>
+            <div class="column">
+                <div><img src="/photo/logo.png" alt="Logo"></div>
+                <a>MAGIC NAILS</a>
+                <a>Nail Salon</a>
+            </div>
+        </div>
+    </footer>
+    <script src="booking.js"></script>
+</body>
+</html>

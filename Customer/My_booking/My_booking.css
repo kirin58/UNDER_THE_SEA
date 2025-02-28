@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, sans-serif;
+}
+  
+
+
+body {
+    background-image: url("/photo/22.png");
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; 
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: inherit;
+    background-size: inherit;
+    background-attachment: inherit;
+    filter: blur(2px);
+    z-index: -1;
+}
+
+ 
+
+.content {
+    width: 90%;
+    max-width: 800px;
+    background-color: #FFEBAE;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.title p {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: -15px;
+    margin-top: 50px;
+
+}
+
+
+
+.now{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+
+
+
+.item span {
+    font-size: 18px;
+    color: #000000;
+}
+.item button{
+    background-color: #F6D6EE;
+}
+.buttons {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 2%;
+    justify-content: flex-end;
+    margin-top: 3%;
+}
+

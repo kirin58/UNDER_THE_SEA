@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sign_in</title>
+    <link rel="stylesheet" href="loginadmin.css">
+    <link rel="icon" href="/photo/Logo.png">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <main>
+        <div class="login">
+            <form>
+                <h1 style="font-family: S">MAGIC NAILS</h1>
+                <div class="input-box">
+                    <label for="username">Enter your username or email address</label>
+                    <input type="text" id="username" name="username" placeholder="Username or email address">
+                    <div id="usernameError" style="color: rgb(255, 0, 0); font-size: 12px;"></div>
+                </div>
+
+                <div class="input-box">
+                    <label for="password">Enter your Password</label>
+                    <div class="input-wrapper">
+                        <input type="password" id="password" name="password" placeholder="Password">
+                        <i class='bx bx-show-alt' id="toggle-password"></i>
+                    </div>
+                    <div id="passwordError" style="color: red; font-size: 12px; "></div>
+                </div>
+
+                <div class="remember-forget">
+                    <a href="/Admin/Recovery_Passwordadmin/Recovery_Password1.html" class="forgot-password"> Forgot Password?</a>
+                </div>
+
+                <div class="button-group">
+                    <button type="button" class="btn" onclick="signIn()">Sign in</button>
+                  <a href="../registerAdmin/registerAdmin.html">  <button type="button" class="btn register-btn">Register</button></a>
+                </div>
+            </form>
+            
+            
+      
+    </main>
+
+    <script src="loginadmin.js"></script>
+</body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="reservation.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="nav">
+        <div class="navright">
+            <a href="../logo/logo.html"><img src="/photo/Logo.png"></a>
+        </div>
+        <div class="navleft">
+            <div>
+                <a href="../Home/HomeAdmin.html" >Home</a>
+                <a href="../manicurist/manicurist.html">Manicurist</a>
+                <a href="../reservation/reservation.html"  style="text-decoration: underline;">Reservation</a>
+            </div>
+            <div class="profile-container">
+                <div class="profile-icon" onclick="toggleMenu()">
+                    <i class='bx bxs-user-circle'></i>
+                </div>
+                <div class="dropdown-menu" id="dropdownMenu">
+                    <a href="../../Customer/Home/homeSignin.html" onclick="logout()"><b>Log out</b></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <main>
+        <h1>Reservation Page</h1>
+        <section>
+            <div class="left">
+                <h2>Manage service type</h2>
+                <div class="columnmange">
+                </div>
+                <div class="buttons">
+                    <button class="btn confirm-btn"><a href="#">Confirm</a></button> 
+                </div>
+            </div>
+            <div class="right">
+                <div class="buttoncolumn">
+                    <button class="plus"><i class='bx bx-plus'></i></button>
+                </div>
+                <div class="buttoncolumn">
+                    <button class="delete"><i class='bx bx-plus'></i></button>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="left">
+                <h2>Manage color type</h2>
+                <div class="columnmange">
+                </div>
+                <div class="buttons">
+                    <button class="btn confirm-btn"><a href="#">Confirm</a></button> 
+                </div>
+            </div>
+            <div class="right">
+                <div class="buttoncolumn">
+                    <button class="plus"><i class='bx bx-plus'></i></button>
+                </div>
+                <div class="buttoncolumn">
+                    <button class="delete"><i class='bx bx-plus'></i></button>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="left">
+                <h2>Manage manicurist type</h2>
+                <div class="columnmange">
+                </div>
+                <div class="buttons">
+                    <button class="btn confirm-btn"><a href="#">Confirm</a></button> 
+                </div>
+            </div>
+            <div class="right">
+                <div class="buttoncolumn">
+                    <button class="plusmanicurist"><i class='bx bx-plus'></i></button>
+                </div>
+                <div class="buttoncolumn">
+                    <button class="delete"><i class='bx bx-plus'></i></button>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="left">
+                <h2>Manage time</h2>
+                <div class="columnmange">
+                    <label class="time">
+                        Open
+                        <input id ="Time"
+                        type="time" min="15:00" max="22:00"
+                        outfocus="focus" required/>
+                    </label>
+                    <label class="time">
+                        Close
+                        <input id ="Time"
+                        type="time" min="15:00" max="22:00"
+                        outfocus="focus" required/>
+                    </label>
+                </div>
+                <div class="buttons">
+                    <button class="btn"><a href="#">Confirm</a></button> 
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="column">
+                <a>About MAGIC NAILS</a>
+                <br>
+                <a href="#">About us</a>
+                <a href="#">Terms and Conditions</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Cookie Policy</a>
+            </div>
+            <div class="column">
+                <a>Customer Service</a>
+                <br>
+                <a href="#">Contact us</a>
+                <a href="#">Chat & Shop Service</a>
+                <a href="#">Frequently asked questions</a>
+                <a href="#">Company location</a>
+            </div>
+            <div class="column">
+                <div><img src="/photo/logo.png" alt="Logo"></div>
+                <a>MAGIC NAILS</a>
+                <a>Nail Salon</a>
+            </div>
+        </div>
+    </footer>
+    <script src="reservation.js"></script>
+    
+</body>
+</html>
