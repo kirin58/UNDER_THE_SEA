@@ -337,16 +337,16 @@ function showPromotion() {
     document.getElementById("promotionContent").innerHTML = `
     <div class="Promotion_column">
         <div class="Promotion1">
-            <div class="promo-box">
+            <a href="../reservation/booking.html"><div class="promo-box">
                 <img src="/photo/12.jpg" alt="เล็บสวยทุกวัน">
                 <div class="promo-text">
                     <h3>“เล็บสวยทุกวัน”</h3>
                     <p>ทุกวันจันทร์และวันอังคาร รับส่วนลด <strong>30%</strong> สำหรับบริการทำเล็บทุกชนิด บริการฟรี!
                         สมาชิกไม่ต้องใช้บริการทำเล็บเจล</p>
                 </div>
-            </div>
+            </div></a>
 
-            <div class="promo-box">
+            <a href="../reservation/booking.html"><div class="promo-box">
                 <img src="/photo/13.jpg" alt="สมาชิก VIP">
                 <div class="promo-text">
                     <h3>สมาชิก VIP</h3>
@@ -354,16 +354,16 @@ function showPromotion() {
                         และโปรโมชั่นพิเศษในวันหยุดทุกการใช้บริการครบ 10 ครั้ง รับบริการทำเล็บฟรี 1 ครั้ง
                     </p>
                 </div>
-            </div>
+            </div></a>
 
-            <div class="promo-box">
+            <a href="../reservation/booking.html"><div class="promo-box">
                 <img src="/photo/29.jpg" alt="โปรโมชั่นวันเกิด">
                 <div class="promo-text">
                     <h3>โปรโมชั่นวันเกิด</h3>
                     <p>ลูกค้าที่มาใช้บริการในเดือนเกิด รับส่วนลด <strong>20%</strong> สำหรับบริการทุกชนิด
                         แถมฟรี! เพ้นท์เล็บลายพิเศษ 1 นิ้ว</p>
                 </div>
-            </div>
+            </div></a>
         </div>
     </div>
     `;

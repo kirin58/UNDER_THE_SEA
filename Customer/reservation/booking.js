@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", function () {
         let errorText = "";
 
         if (!dateInput.value) {
-            errorText += "Kindly select a date!<br>";
+            errorText += "Please select a date!<br>";
         }
 
         if (!timeInput.value) {
@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
         if (!fileInput.files.length) {
-            errorText += "nail design example!<br>";
+            errorText += "Please insert a picture of nail designs!<br>";
         }
 
         if (errorText) {
