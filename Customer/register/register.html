@@ -25,7 +25,7 @@
                     <div id="phoneError"></div>
             <label for="Password">Enter your Password</label>
                 <input id ="Password"
-                    type="text"
+                    type="password"
                     outfocus="outfocus"
                     placeholder="Password"
                     required
@@ -33,7 +33,7 @@
                     <div id="passwordError"></div>
             <label for="ConfirmPassword">Confirm Password</label>
                 <input id="ConfirmPassword" 
-                    type="text"
+                    type="password"
                     outfocus="outfocus" 
                     placeholder="Confirm Password" 
                     required
@@ -61,12 +61,8 @@
         </div>
     </div>
     <div class="button">
-        <div class="columnconfirm">
-            <div class="inconfirm">
-                <button type="button" class="confirm" onclick="registerUser()">Confirm</button>
-            </div>
-        </div>
-        <div class="column">
+        <div class="inconfirm">
+            <button type="button" class="confirm" onclick="registerUser()">Confirm</button>
             <a href="../sign_in/sign_in.html"><button class="cancel">Cancel</button></a>
         </div>  
     </div>
