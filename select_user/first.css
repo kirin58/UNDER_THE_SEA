@@ -26,12 +26,11 @@ h1 {
     background-color: #FFEBAE;
     font-size: 25px;
     text-align: center;
-    padding: 20px;
+    padding: 20px 100px 50px 100px;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    box-shadow: 8px 8px #716e6e89;
 }
 
 .container button {
