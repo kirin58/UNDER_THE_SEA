@@ -17,7 +17,7 @@ This project is for the Frontend Software Development and Software Requirement s
 
 
 
-## Tech stack Forntend (เครื่องมือ)
+## Tech stack Frontend (เครื่องมือ)
 
 - Html
 - css
