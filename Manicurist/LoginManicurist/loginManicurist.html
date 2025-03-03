@@ -18,7 +18,7 @@
                 <div class="input-box">
                     <label for="username">Enter your username</label>
                     <input type="text" id="username" name="username" placeholder="Username ">
-                    
+                    <div id="usernameError" style="color: rgb(255, 0, 0); font-size: 12px;"></div>
                 </div>
 
                 <div class="input-box">
@@ -26,12 +26,15 @@
                     <div class="input-wrapper">
                         <input type="password" id="password" name="password" placeholder="Password">
                         <i class='bx bx-show-alt' id="toggle-password"></i>
-                    </div>
-                    
+                    </div> 
+                    <div id="passwordError" style="color: red; font-size: 12px; "></div>  
+                </div>
+                <div class="remember-forget">
+                    <a href="/Admin/Recovery_Passwordadmin/Recovery_Password1.html" class="forgot-password"> Forgot Password?</a>
                 </div>
                 <div class="button-group">
-                 <a href="../homeManicurist/homeManicurist.html">  <button type="button" class="btn" >Sign in</button></a>
-             
+                    <button type="button" class="btn" onclick="signIn()">Sign in</button></a>
+                    <a href="../registermanicurist/registermanicurist.html">  <button type="button" class="btn register-btn">Register</button></a>
                 </div>
             </form>
             
