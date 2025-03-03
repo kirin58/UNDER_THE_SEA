@@ -38,7 +38,7 @@ function signIn() {
         return;
     }
 
-    window.location.href = "../homeManicurist/homeManicurist.html"; 
+    window.location.href = "../ScheduleManicurist/Schedule.html"; 
 }
 
 

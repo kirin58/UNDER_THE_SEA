@@ -11,7 +11,6 @@ function registerUser() {
     document.getElementById("confirmPasswordError").innerText = "";
     document.getElementById("passwordError").innerText = "";
 
-
     let isValid = true;
 
     if (!username) {
@@ -31,8 +30,6 @@ function registerUser() {
         isValid = false;
     }
 
-
-
     const passwordCriteria = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&#])[A-Za-z\d@$!%*?&#]{8,}$/;
 
     if (password.length < 8) {
@@ -44,18 +41,16 @@ function registerUser() {
             "1 uppercase letter, 1 lowercase letter, 1 number, and 1 special character.";
         isValid = false;
     }
-    
+
     if (password !== confirmPassword) {
         document.getElementById("confirmPasswordError").innerText = "Passwords do not match.";
         isValid = false;
     }
 
-
     let users = JSON.parse(localStorage.getItem("users")) || [];
 
     let existingUser = users.find(user => user.username === username);
     let existingEmail = users.find(user => user.email === email);
-
 
     if (existingUser) {
         document.getElementById("usernameError").innerText = "This username is already taken.";
@@ -66,14 +61,28 @@ function registerUser() {
         isValid = false;
     }
 
-
     if (!isValid) {
         return;
     }
 
-    let userData = { username, email,password };
+    let userData = { username, email, password };
     users.push(userData);
     localStorage.setItem("users", JSON.stringify(users));
-    window.location.href = "../loginadmin/loginadmin.html";
-}
+    let alertBox = document.createElement("div");
+    alertBox.innerText = "Waiting for the system to verify for 1-2 days.";
+    alertBox.style.position = "fixed";
+    alertBox.style.top = "35%";
+    alertBox.style.left = "50%";
+    alertBox.style.transform = "translate(-50%, -50%)";
+    alertBox.style.background = "#03CA27";
+    alertBox.style.color = "white";
+    alertBox.style.padding = "30px 35px";
+    alertBox.style.borderRadius = "10px";
+    alertBox.style.fontSize = "22px";
+    document.body.appendChild(alertBox);
 
+    setTimeout(() => {
+        document.body.removeChild(alertBox); 
+        window.location.href = "../loginadmin/loginadmin.html";
+    }, 2500);
+}
