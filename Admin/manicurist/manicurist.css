@@ -3,7 +3,7 @@ body {
     flex-direction: column;
     align-items: center;
     min-height: 100vh;
-    background-image: url(6.png);
+    background-image: url("/photo/20.png");
     background-size: cover;
     background-attachment: fixed;
     position: relative;

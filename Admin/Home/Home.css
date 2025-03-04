@@ -2,7 +2,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-image: url("/photo/40.png");
+    background-image: url("/photo/20.png");
     background-size: cover;
     background-attachment: fixed;
     position: relative;
@@ -18,7 +18,6 @@ body::before {
     background-image: inherit;
     background-size: inherit;
     background-attachment: inherit;
-    filter: blur(2px);
     z-index: -1;
 }
 .banner{
