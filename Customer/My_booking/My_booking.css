@@ -29,7 +29,6 @@ body::before {
     background-image: inherit;
     background-size: inherit;
     background-attachment: inherit;
-    filter: blur(2px);
     z-index: -1;
 }
 

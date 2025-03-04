@@ -1,9 +1,13 @@
-body{
+body {
     background-image: url("/photo/22.png");
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    min-height: 100vh; 
 }
 main{
     display: flex;
