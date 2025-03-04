@@ -1,6 +1,6 @@
 # MAGIC Nails Frontend
 เป็นโปรเจคในวิชา Frontend Software Development และวิชา Software Requirement
-เป็นเว็บไซต์จองที่ถูกพัฒนาโดยกลุ่ม Under the Sea จากสาขาวิศวกรรมซอฟต์แวร์ มหาวิทยาลัยพะเยา สำหรับปีการศึกษา 2567
+เป็นเว็บไซต์จองคิวทำเล็บที่ถูกพัฒนาโดยกลุ่ม Under the Sea จากสาขาวิศวกรรมซอฟต์แวร์ มหาวิทยาลัยพะเยา สำหรับปีการศึกษา 2567
 
 This project is for the Frontend Software Development and Software Requirement subjects. It is a booking website developed by the Under the Sea group from the Software Engineering Department at the University of Phayao for the academic year 2567.
 
