@@ -4,6 +4,9 @@
 
 This project is for the Frontend Software Development and Software Requirement subjects. It is a booking website developed by the Under the Sea group from the Software Engineering Department at the University of Phayao for the academic year 2567.
 
+##Demo
+
+https://under-the-sea.onrender.com
 
 ## Feature (ความสามารถ)
 
@@ -24,13 +27,20 @@ This project is for the Frontend Software Development and Software Requirement s
 - javascript
 - Google
 - Google map
-  
-  
+
+##คู่มือการใช้งาน
+  [https://liveupac-my.sharepoint.com/:w:/g/personal/67022535_up_ac_th/EQf_ufpQSDRGmU7RTwU0SqQBk1J-tJQyfygflb1WSN75Lw?e=OM72zj] (#คู่มือการใช้งานระบบ)
 ## Team Job position (ตำแหน่งงานของทีม)
 
-| รหัสนิสิต  | ชื่อ | ตำแหน่ง | 
+| Student ID  | Name | Position | 
 |--------------|----------------------|----------------------|
 | 67022535     | Karunyaphat Kanthanate  |พัฒนา UX/UI HTML/CSS และ Script (ทั้งหมด) |
 | 67022748     | Peerapat Sawaengram     |พัฒนา UX/UI HTML/CSS และ Script (ทั้งหมด) |
 | 67023031     | Arachaphon Klinchuen    |พัฒนา UX/UI HTML/CSS และ Script (ทั้งหมด) |
 | 67025077     | Supharoek Roopkhamdee   |พัฒนา UX/UI HTML/CSS และ Script (ทั้งหมด) |
+
+##Contact
+
+หากมีคำถาม สามารถติดต่อผู้ดูแลโปรเจคได้ที่
+- E-mail : 67022748@up.ac.th
+- Phone : 0821819636
