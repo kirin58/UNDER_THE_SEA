@@ -29,7 +29,7 @@ https://under-the-sea.onrender.com
 - Google map
 
 ##คู่มือการใช้งาน
-  [คู่มือการใช้งานระบบ] (#https://liveupac-my.sharepoint.com/:w:/g/personal/67022535_up_ac_th/EQf_ufpQSDRGmU7RTwU0SqQBk1J-tJQyfygflb1WSN75Lw?e=OM72zj)
+  [คู่มือการใช้งานระบบ] (https://liveupac-my.sharepoint.com/:w:/g/personal/67022535_up_ac_th/EQf_ufpQSDRGmU7RTwU0SqQBk1J-tJQyfygflb1WSN75Lw?e=OM72zj)
 ## Team Job position (ตำแหน่งงานของทีม)
 
 | Student ID  | Name | Position | 
