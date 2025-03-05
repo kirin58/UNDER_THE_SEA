@@ -35,7 +35,7 @@ function signIn() {
   // ถ้าผู้ใช้ตรงกัน ล็อกอินสำเร็จ
   console.log("Login successful! Redirecting to home...");
   localStorage.setItem("loggedInUser", JSON.stringify(matchedUser)); 
-  window.location.href = "../home/home.html"; 
+  window.location.href = "../Home/home.html"; 
 }
 
 function handleCredentialResponse(response) {
