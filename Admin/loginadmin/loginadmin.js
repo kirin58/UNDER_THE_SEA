@@ -38,5 +38,5 @@ function signIn() {
         return;
     }
 
-    window.location.href = "../home/homeAdmin.html"; 
+    window.location.href = "../Home/HomeAdmin.html"; 
 }
